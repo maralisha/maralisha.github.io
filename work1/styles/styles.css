@@ -11,6 +11,14 @@ body * {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+
+@media (max-width: 767.98px) {
+  .content {
+   max-width: 750px;
+  }
+}
+
+
 .button {
 	background: #E3B873;
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -21,6 +29,9 @@ body * {
 	color: white;
 	text-transform: uppercase;
 	font-style: italic;
+}
+.button_header {
+  margin-left: 45px;
 }
 
 .button_tr {
@@ -68,14 +79,13 @@ body * {
 	color: white;
 }
 
+
 .hero {
+  position: relative;
 	background-image: url(../images/hero.jpg);
 	background-size: cover;
 	height: 678px;
 	padding-top: 194px;
-	padding-right: 632px;
-	padding-bottom: 208px;
-	padding-left: 134px;
 }
 .hero-overlay {
 	content: "";
@@ -105,6 +115,8 @@ body * {
 .color {
 	color: #E3B873;
 }
+
+
 .text1 {
 	font-family: Nunito Sans;
 	font-style: normal;
@@ -135,25 +147,31 @@ body * {
 
 .two_part {
 	padding-top: 150px;
-    background-color: black;
-    background-size: cover;
-    height: 1074px;
-    margin: 0 auto;
+  background-color: black;
+  background-size: cover;
+  height: 1074px;
+  margin: 0 auto;
 }
 .two_part_content {
-	padding-top: 0;
+   position: relative;
+   display: flex;
+  flex-direction: column;
+
+}
+	/*padding-top: 0;
 	padding-bottom: 415px;
 	display: flex;
-    flex-direction: column;
-}
+  flex-direction: column;
+  margin-left: 150px;
+}*/
 .two_menu_content {
 
 	width: 700px;
-    height: 50px;
-    position: relative;
-    padding-top: 0;
-    margin-left: 485px;
-    margin-bottom: 0px;
+  height: 50px;
+  position: relative;
+  padding-top: 0;
+  margin-left: 600px;
+  margin-bottom: 0px;
 }
 
 
@@ -167,26 +185,24 @@ body * {
 .two-menu_item a {
 	text-decoration: none;
 	color: white;
-    margin-right: 50px;
+  margin-right: 50px;
 }
 .left-right {
-	display: flex;
+ 	display: flex;
 	flex-direction: row;
-	
-
 }
 .two_part-left-content {
 	font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
+  line-height: 37px;
+  letter-spacing: -0.07em;
 	color: #E3B873;
 }
 
 .two_part-right-content {
 	background-image: url(../images/admi.jpg);
 	height: 482px;
-	width: 679px;
-    margin-left: 50px;
+	width: 700px;
+  margin-left: 200px;
 }
 .title2 {
 	font-size: 18px;
@@ -208,14 +224,14 @@ body * {
 
 .three_part {
 	height: 1000px;
-    margin-top: -280px;
-    padding: 0px 100px 147.85px 100px;
+  margin-top: -280px;
+  padding: 0px 100px 147.85px 100px;
 }
 
 .three_part_content {
 	display: block;
-    margin: 0 auto;
-    width: 817px;
+  margin: 0 auto;
+  width: 817px;
 }
 
 .camera {
@@ -263,6 +279,7 @@ margin: 0 auto;
 .form {
     width: 817px;
     display: flex;
+    flex-direction: column; 
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -272,8 +289,6 @@ margin: 0 auto;
     flex-direction: row;
     max-width: 770px;
     justify-content: space-between;
-    margin: 40px auto 40px;
-
 }
 
 .form-control__label {
@@ -505,10 +520,15 @@ margin: 0 auto;
   padding-top: 39px;
 }
 
- .checkbox__label {
+.checkbox__label {
     margin-left: 3px;
     color: #fff;
   }
+
+.color_black {
+  color: black;
+}
+
 .checkbox__label--reverse {
   color: #fff;
   padding-left: 8px;
@@ -550,6 +570,16 @@ border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   justify-content: center;
 }
 
+@media (max-width: 767.98px) {
+  .clients {
+    display: none;
+  }
+}
+
+.clients__content {
+  position: relative;
+}
+
 .clients__inner {
   margin: 0 auto;
   text-align: center;
@@ -574,7 +604,6 @@ border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 
 .clients__items {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .clients__item {
@@ -760,4 +789,40 @@ background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9)),
 
 .header--footer {
   height: 133px;
+}
+
+
+@media (max-width: 767.98px) {
+  .header-nav {
+    display: none;
+  }
+  .button_header {
+    display: none;
+  }
+  /*.logo {
+    margin-right: 18px;
+  }*/
+  .hero-content {
+    max-width: 750px;
+  }
+  .part1 {
+    max-width: 750px;
+    display: block;
+  }
+  .two_menu_content {
+    display: none;
+  }
+  .two_part-right-content {
+    display: none;
+  }
+ /*.two_part-left-content {
+    
+  }*/
+
+.features {
+  display: none;
+}
+.header--footer {
+  display: none;
+}
 }
