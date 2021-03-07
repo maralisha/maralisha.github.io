@@ -1,0 +1,191 @@
+.container {
+  position: relative;
+  max-width: 1330px;
+  margin: auto;
+  padding: 0 40px;
+  height: 100%;
+}
+@font-face {
+  font-family: 'YesevaOne';
+  font-display: swap;
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSans-Italic';
+  font-display: swap;
+  src: url("../fonts/NunitoSans-Regular-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NunitoSans-Regular';
+  font-display: swap;
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.portfolio {
+  background-color: black;
+  color: #ffffff;
+  min-height: 1100px;
+  padding-top: 107px;
+}
+.portfolio__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.portfolio__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: 'YesevaOne';
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+.portfolio__link {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 60px;
+  height: 20px;
+}
+.active {
+  color: #e3b873;
+}
+
+.active-underline {
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;
+}
+
+.portfolio__wrapper {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.portfolio__info {
+  font-weight: 400;
+  font-family: 'NunitoSans-Regular';
+  font-size: 14px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 210px 162px 95px;
+  grid-column-gap: 35px;
+}
+.portfolio__descriptions {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+}
+.portfolio__text {
+  margin: 35px 0 40px 0;
+}
+
+.portfolio__pictures {
+  max-width: 680px;
+  max-height: 480px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  justify-self: flex-end;
+}
+
+.portfolio__pictures img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+}
+
+.portfolio__feature {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+}
+
+.portfolio__subtitle {
+  font-family: 'YesevaOne';
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin: 9px 0;
+}
+.portfolio__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 80px;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+}
+.portfolio__arrow {
+  width: 45px;
+  height: 11px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.portfolio__arrow-left {
+  background: url("../images/arrow-left.svg");
+}
+
+.portfolio__arrow-right {
+  background: url("../images/arrow-right.svg");
+}
+.active {
+  color: #e3b873;
+}
+
+.secondary-heading {
+  font-size: 27px;
+  font-family: 'YesevaOne';
+  text-transform: uppercase;
+  color: #e3b873;
+  font-weight: 400;
+  margin: 0;
+}
+
+.portfolio__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 9px;
+  outline: none;
+  cursor: pointer;
+}
+
+.portfolio__text {
+    font-size: 14px;
+    font-family: Nunito Sans;
+    line-height: 26px;
+    margin: 35px 0 40px 0;
+  }
